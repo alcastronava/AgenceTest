@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Pagina No Encontrada";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <b>@ViewData["Title"]</b>
+            </div>
+            <div class="card-body">
+
+                <h1 class="text-danger">Error.</h1>
+                <h2>Pagina no encontrada.</h2>
+                <br />
+                <p>Ruta: <strong>@ViewBag.Path</strong></p>
+                <br />
+                <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary">Ir al Inicio</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+

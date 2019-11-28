@@ -1,0 +1,153 @@
+﻿@model AgenceTest.Models.Caol.CaoUsuario
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>CaoUsuario</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CoUsuario" class="control-label"></label>
+                <input asp-for="CoUsuario" class="form-control" />
+                <span asp-validation-for="CoUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoUsuario" class="control-label"></label>
+                <input asp-for="NoUsuario" class="form-control" />
+                <span asp-validation-for="NoUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DsSenha" class="control-label"></label>
+                <input asp-for="DsSenha" class="form-control" />
+                <span asp-validation-for="DsSenha" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CoUsuarioAutorizacao" class="control-label"></label>
+                <input asp-for="CoUsuarioAutorizacao" class="form-control" />
+                <span asp-validation-for="CoUsuarioAutorizacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NuMatricula" class="control-label"></label>
+                <input asp-for="NuMatricula" class="form-control" />
+                <span asp-validation-for="NuMatricula" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DtDesligamento" class="control-label"></label>
+                <input asp-for="DtDesligamento" class="form-control" />
+                <span asp-validation-for="DtDesligamento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NuCpf" class="control-label"></label>
+                <input asp-for="NuCpf" class="form-control" />
+                <span asp-validation-for="NuCpf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NuRg" class="control-label"></label>
+                <input asp-for="NuRg" class="form-control" />
+                <span asp-validation-for="NuRg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoOrgaoEmissor" class="control-label"></label>
+                <input asp-for="NoOrgaoEmissor" class="form-control" />
+                <span asp-validation-for="NoOrgaoEmissor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UfOrgaoEmissor" class="control-label"></label>
+                <input asp-for="UfOrgaoEmissor" class="form-control" />
+                <span asp-validation-for="UfOrgaoEmissor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DsEndereco" class="control-label"></label>
+                <input asp-for="DsEndereco" class="form-control" />
+                <span asp-validation-for="DsEndereco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoEmail" class="control-label"></label>
+                <input asp-for="NoEmail" class="form-control" />
+                <span asp-validation-for="NoEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoEmailPessoal" class="control-label"></label>
+                <input asp-for="NoEmailPessoal" class="form-control" />
+                <span asp-validation-for="NoEmailPessoal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NuTelefone" class="control-label"></label>
+                <input asp-for="NuTelefone" class="form-control" />
+                <span asp-validation-for="NuTelefone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UrlFoto" class="control-label"></label>
+                <input asp-for="UrlFoto" class="form-control" />
+                <span asp-validation-for="UrlFoto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InstantMessenger" class="control-label"></label>
+                <input asp-for="InstantMessenger" class="form-control" />
+                <span asp-validation-for="InstantMessenger" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Icq" class="control-label"></label>
+                <input asp-for="Icq" class="form-control" />
+                <span asp-validation-for="Icq" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Msn" class="control-label"></label>
+                <input asp-for="Msn" class="form-control" />
+                <span asp-validation-for="Msn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Yms" class="control-label"></label>
+                <input asp-for="Yms" class="form-control" />
+                <span asp-validation-for="Yms" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DsCompEnd" class="control-label"></label>
+                <input asp-for="DsCompEnd" class="form-control" />
+                <span asp-validation-for="DsCompEnd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DsBairro" class="control-label"></label>
+                <input asp-for="DsBairro" class="form-control" />
+                <span asp-validation-for="DsBairro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NuCep" class="control-label"></label>
+                <input asp-for="NuCep" class="form-control" />
+                <span asp-validation-for="NuCep" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoCidade" class="control-label"></label>
+                <input asp-for="NoCidade" class="form-control" />
+                <span asp-validation-for="NoCidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UfCidade" class="control-label"></label>
+                <input asp-for="UfCidade" class="form-control" />
+                <span asp-validation-for="UfCidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DtExpedicao" class="control-label"></label>
+                <input asp-for="DtExpedicao" class="form-control" />
+                <span asp-validation-for="DtExpedicao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

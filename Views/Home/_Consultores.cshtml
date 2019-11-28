@@ -1,0 +1,12 @@
+﻿@model IEnumerable<AgenceTest.ViewModels.ConsultoresPeriodos>
+
+@if (Model != null && Model.Count() > 0)
+{
+    @foreach (var item in Model)
+    {
+        <h3>@Html.DisplayFor(modelItem => item.Nombre)</h3>
+
+        <partial name="_ConsultorPeriodo" model="@item" />
+    }
+
+}

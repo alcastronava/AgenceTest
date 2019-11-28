@@ -1,0 +1,67 @@
+﻿@model AgenceTest.ViewModels.ConsultoresPeriodos 
+
+@*IEnumerable<AgenceTest.ViewModels.ConsultorPeriodo>*@
+
+@if (Model != null && Model.Periodos != null && Model.Periodos.Count() > 0)
+{
+    <table class="table table-striped table-bordered table-sm table-responsive-sm table-align-middle">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Periodos.First().Periodo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Periodos.First().Ganancias)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Periodos.First().Comisiones)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Periodos.First().Salario)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Periodos.First().Lucro)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Periodos)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Periodo)
+                    </td>
+                    <td class="text-right">
+                        @Html.DisplayFor(modelItem => item.Ganancias)
+                    </td>
+                    <td class="text-right">
+                        @Html.DisplayFor(modelItem => item.Comisiones)
+                    </td>
+                    <td class="text-right">
+                        @Html.DisplayFor(modelItem => item.Salario)
+                    </td>
+                    <td class="text-right">
+                        @Html.DisplayFor(modelItem => item.Lucro)
+                    </td>
+                </tr>
+            }
+        <tr>
+            <td class="font-weight-bold">
+                Totales
+            </td>
+            <td class="text-right font-weight-bold">
+                @Html.DisplayFor(model => Model.TotalGanancias)
+            </td>
+            <td class="text-right font-weight-bold">
+                @Html.DisplayFor(model => Model.TotalComisiones)
+            </td>
+            <td class="text-right font-weight-bold">
+                @Html.DisplayFor(model => Model.TotalSalario)
+            </td>
+            <td class="text-right font-weight-bold">
+                @Html.DisplayFor(model => Model.TotalLucro)
+            </td>
+        </tr>
+        </tbody>
+    </table>
+}
