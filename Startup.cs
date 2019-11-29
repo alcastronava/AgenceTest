@@ -34,7 +34,8 @@ namespace AgenceTest
             });
 
             services.AddDbContext<AgenceCaolContext>(options =>
-                options.UseMySQL("server=localhost;port=3306;user=root;password=password;database=AgenceCaol;Convert Zero Datetime=True"));
+                options.UseMySQL("server=agentecaol.mysql.database.azure.com;port=3306;user=alfredo@agentecaol;password=Agencecoal1*;database=agencecaol;Convert Zero Datetime=True"));
+                //options.UseMySQL("server=localhost;port=3306;user=root;password=password;database=AgenceCaol;Convert Zero Datetime=True"));
 
             services.AddSession(options =>
             {

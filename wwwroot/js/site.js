@@ -8,7 +8,16 @@ function getRandomColor() {
     return color;
 }
 
+function showSpinner() {
+    $('#spinner-partial').show();
+    $('#informe').hide();
+    $('#submit-inform-btn').attr("disabled", true);
+}
+
 function CreateCharts() {
+    $('#spinner-partial').hide();
+    $('#informe').show();
+    $('#submit-inform-btn').attr("disabled", false);	
     CreateChart();
     CreatePie();
 }
@@ -57,7 +66,7 @@ function CreateChart() {
             };
             mDataSets.push(costo);
 
-            var ctx = document.getElementById('ChartData').getContext('2d');
+            var ctx = document.getElementById('chart-data').getContext('2d');
             var chart = new Chart(ctx, {
                 type: 'line',
                 data:
@@ -87,7 +96,7 @@ function CreatePie() {
                     dataArray.push(item.value);
                     colorArray.push(getRandomColor());
                 });
-                var ctx = document.getElementById('ChartPie').getContext('2d');
+                var ctx = document.getElementById('chart-pie').getContext('2d');
                 chart = new Chart(ctx, {
                     type: 'pie',
                     data:
