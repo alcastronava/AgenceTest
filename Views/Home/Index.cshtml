@@ -47,13 +47,24 @@
                 </div>
 
                 <div id="informe" style="display: none">
-                    <hr />
-                    <div id="consultores-list">
+
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#reporte" role="tab" aria-controls="reporte" aria-selected="true"><b>Informe</b></a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#grafico" role="tab" aria-controls="grafico" aria-selected="false"><b>Grafico</b></a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pizza" role="tab" aria-controls="pizza" aria-selected="false"><b>Pizza</b></a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active show" id="reporte" role="tabpanel">
+                            <div id="consultores-list"></div>
+                        </div>
+                        <div class="tab-pane" id="grafico" role="tabpanel">
+                            <canvas id="chart-data"></canvas>
+                        </div>
+                        <div class="tab-pane" id="pizza" role="tabpanel">
+                            <canvas id="chart-pie"></canvas>
+                        </div>
                     </div>
-                    <hr />
-                    <canvas id="chart-data"></canvas>
-                    <hr />
-                    <canvas id="chart-pie"></canvas>
+
                 </div>
 
             </div>
